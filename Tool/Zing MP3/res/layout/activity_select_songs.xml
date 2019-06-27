@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <LinearLayout android:gravity="center_vertical" android:background="?colorBackgroundBold" android:paddingLeft="@dimen/spacing_normal" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <EditText android:textSize="@dimen/text_primary" android:id="@id/etSearchBar" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/search_hint" android:singleLine="true" android:drawablePadding="@dimen/spacing_normal" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/btnClose" android:background="?selectorBorderless" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_action_close" android:tint="?colorDrawableTint" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/fragment" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <include layout="@layout/playbar" />
+</LinearLayout>

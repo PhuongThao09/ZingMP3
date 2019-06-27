@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ff23a5c9" android:gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="Lựa chọn nhà mạng" />
+    <View android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/operator_container" android:background="#fff3f3f3" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/viettel" android:layout_width="135.0dip" android:layout_height="75.0dip" android:scaleType="fitXY" />
+        <ImageView android:id="@id/vinaphone" android:layout_width="135.0dip" android:layout_height="75.0dip" android:layout_margin="10.0dip" android:scaleType="fitXY" />
+        <ImageView android:id="@id/mobiphone" android:layout_width="135.0dip" android:layout_height="75.0dip" android:scaleType="fitXY" />
+    </LinearLayout>
+</LinearLayout>

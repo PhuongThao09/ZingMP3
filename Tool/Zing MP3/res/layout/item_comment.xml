@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?selector" android:paddingLeft="@dimen/spacing_normal" android:paddingTop="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:paddingBottom="@dimen/spacing_normal" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgAvatar" android:layout_width="@dimen/thumb_comment_avatar" android:layout_height="@dimen/thumb_comment_avatar" android:layout_marginRight="@dimen/spacing_normal" />
+    <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:ellipsize="end" android:id="@id/tvUsername" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="22" android:layout_toRightOf="@id/imgAvatar" />
+    <TextView android:textAppearance="@style/Ziba.TextAppearance" android:gravity="bottom|center|right" android:id="@id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/tvUsername" android:layout_alignBaseline="@id/tvUsername" android:layout_alignParentRight="true" />
+    <TextView android:textAppearance="@style/Ziba.TextAppearance" android:textColor="?tcPrimary" android:id="@id/tvContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/imgAvatar" android:layout_below="@id/tvUsername" />
+</RelativeLayout>

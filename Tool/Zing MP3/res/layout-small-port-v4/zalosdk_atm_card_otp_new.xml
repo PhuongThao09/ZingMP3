@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#aa000000" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/container" android:background="@drawable/zalosdk_round_corner" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/payment_method_container" layout="@layout/payment_method_container" />
+        <ScrollView android:layout_gravity="center_horizontal" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/payment_group_button_submit_height" android:fillViewport="true" android:layout_below="@id/payment_method_container">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/view_root" android:padding="7.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <EditText android:textSize="@dimen/sdk_form_input_size" android:textColor="#ff292f33" android:id="@id/zalosdk_otp_ctl" android:background="@drawable/zalosdk_border06" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:hint="@string/zalosdk_otp" android:singleLine="true" android:maxLength="12" android:layout_below="@id/zalosdk_otp_note_ctl" android:inputType="textNoSuggestions" android:imeOptions="actionNext|flagNoExtractUi" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/captcha_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/zalosdk_otp_ctl">
+                        <EditText android:textSize="@dimen/sdk_form_input_size" android:textColor="#ff292f33" android:id="@id/zalosdk_captchar_ctl" android:background="@drawable/zalosdk_border06" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:hint="@string/zalosdk_captchar_inputing" android:singleLine="true" android:maxLength="12" android:layout_weight="1.0" android:inputType="textNoSuggestions" android:imeOptions="actionGo|flagNoExtractUi" />
+                        <ImageView android:id="@id/zalosdk_captchar_img_ctl" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_marginLeft="2.0dip" android:scaleType="fitCenter" android:layout_weight="1.0" android:contentDescription="@string/zalosdk_app_name" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/payment_group_button_submit_height" android:layout_alignParentBottom="true" layout="@layout/zalosdk_button_submit_module" />
+    </RelativeLayout>
+</RelativeLayout>

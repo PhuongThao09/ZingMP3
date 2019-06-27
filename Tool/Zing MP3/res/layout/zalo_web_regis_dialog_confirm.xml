@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="normal" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="Xác nhận" />
+    <View android:id="@id/line" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/phoneNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="30.0dip" android:text="4564231" />
+    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/content" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/confirm_regis" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip">
+        <TextView android:textStyle="bold" android:textColor="@color/background_btn" android:id="@id/btn_add" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:text="XÁC NHẬN" android:layout_alignParentRight="true" />
+        <TextView android:textStyle="bold" android:textColor="@color/background_btn" android:id="@id/centerbtn" android:padding="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:text="XÁC NHẬN" android:layout_centerHorizontal="true" />
+        <TextView android:textStyle="bold" android:textColor="@color/background_btn" android:id="@id/btn_cancel" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:text="THAY ĐỔI" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_timer" android:id="@id/menu_timer" android:orderInCategory="0" android:title="@string/menu_timer" app:showAsAction="always" />
+    <item android:id="@id/menu_capture_n_share" android:orderInCategory="100" android:title="@string/menu_capture_n_share" app:showAsAction="never" />
+    <item android:id="@id/menu_volume" android:orderInCategory="101" android:title="@string/menu_volume" app:showAsAction="never" />
+    <item android:id="@id/menu_equalizer" android:orderInCategory="102" android:title="@string/equalizer" app:showAsAction="never" />
+</menu>

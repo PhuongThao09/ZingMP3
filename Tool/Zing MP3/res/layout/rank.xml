@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tvRank" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Ziba.Widget.TextView.Primary" />
+    <TextView android:gravity="center_vertical" android:id="@id/tvChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:drawableLeft="@drawable/ic_chart_increase" android:drawablePadding="2.0dip" style="@style/Ziba.TextAppearance" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/download128" android:background="?selector" android:paddingLeft="@dimen/spacing_dialog" android:paddingRight="@dimen/spacing_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_dialog_margin_title" android:minHeight="@dimen/li_min_height">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/k128" android:layout_weight="1.0" style="@style/Ziba.Widget.TextView.Dialog" />
+        <RadioButton android:id="@id/rdDownload128" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/download320" android:background="?selector" android:paddingLeft="@dimen/spacing_dialog" android:paddingRight="@dimen/spacing_dialog" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/li_min_height">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/k320" android:drawableRight="@drawable/ic_vip" android:drawablePadding="@dimen/spacing_normal" style="@style/Ziba.Widget.TextView.Dialog" />
+        <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <RadioButton android:id="@id/rdDownload320" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/downloadLl" android:background="?selector" android:paddingLeft="@dimen/spacing_dialog" android:paddingRight="@dimen/spacing_dialog" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/li_min_height">
+        <TextView android:id="@id/tv_lossless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lossless" android:drawableRight="@drawable/ic_vip" android:drawablePadding="@dimen/spacing_normal" style="@style/Ziba.Widget.TextView.Dialog" />
+        <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <RadioButton android:id="@id/rdDownloadLl" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:background="?dividerColor" android:layout_width="fill_parent" android:layout_height="@dimen/divider" />
+    <CheckBox android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:id="@id/cbRemember" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_dialog_checkbox" android:minHeight="@dimen/li_min_height" android:text="@string/dialog_download_remember" />
+</LinearLayout>

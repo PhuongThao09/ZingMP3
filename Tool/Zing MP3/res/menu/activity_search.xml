@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_action_mic" android:id="@id/menu_voice" android:visible="false" android:orderInCategory="0" android:title="@string/menu_voice" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_action_close" android:id="@id/menu_close" android:visible="false" android:orderInCategory="0" android:title="@string/menu_close" app:showAsAction="ifRoom" />
+</menu>

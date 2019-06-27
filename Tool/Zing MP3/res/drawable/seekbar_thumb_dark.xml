@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="oval" android:useLevel="false">
+            <size android:height="@dimen/seekbar_thumb" android:width="@dimen/seekbar_thumb" />
+            <solid android:color="#ff5c5c5c" />
+            <stroke android:width="@dimen/seekbar_thumb_stroke_disable" android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <size android:height="@dimen/seekbar_thumb" android:width="@dimen/seekbar_thumb" />
+            <solid android:color="@color/dark_colorAccent" />
+            <stroke android:width="@dimen/seekbar_thumb_stroke_press" android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <size android:height="@dimen/seekbar_thumb" android:width="@dimen/seekbar_thumb" />
+            <solid android:color="@color/dark_colorAccent" />
+            <stroke android:width="@dimen/seekbar_thumb_stroke" android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</selector>

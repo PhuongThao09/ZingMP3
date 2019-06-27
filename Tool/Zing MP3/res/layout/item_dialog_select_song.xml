@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?selector" android:paddingLeft="@dimen/spacing_dialog" android:paddingTop="@dimen/spacing_small" android:paddingRight="@dimen/spacing_dialog_checkbox" android:paddingBottom="@dimen/spacing_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/li_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/checkBox" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/checkBox" android:layout_toRightOf="@id/imgThumb" android:layout_centerVertical="true">
+        <TextView android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Ziba.Widget.TextView.Primary" />
+        <TextView android:id="@id/tvArtist" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Ziba.Widget.TextView" />
+    </LinearLayout>
+</RelativeLayout>

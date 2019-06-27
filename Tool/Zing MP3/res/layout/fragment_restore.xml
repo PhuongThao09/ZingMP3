@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/header" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/li_min_height" layout="@layout/fragment_restore_header" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header" layout="@layout/recyclerview" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/loading" />
+    <ViewStub android:id="@id/vsError" android:layout="@layout/error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

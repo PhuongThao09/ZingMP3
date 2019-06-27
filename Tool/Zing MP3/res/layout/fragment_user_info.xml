@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/infoHeader" android:layout_width="fill_parent" android:layout_height="@dimen/user_info_height" layout="@layout/user_info" />
+    <RelativeLayout android:id="@id/expire" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large">
+        <Button android:id="@id/btnBuy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_normal" android:text="@string/buy_vip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Ziba.Widget.Button.Colored" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btnBuy" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:id="@id/tvExpire" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/expire" />
+            <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:textColor="?tcSecondary" android:id="@id/tvExpireDate" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/llMapping" android:background="?selector" android:padding="@dimen/spacing_normal" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_normal">
+        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sync_account" />
+        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:textColor="?tcSecondary" android:id="@id/tvMappingDes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sync_account_desc" />
+    </LinearLayout>
+    <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:gravity="center_vertical" android:id="@id/btnLogout" android:background="?selector" android:padding="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_normal" android:minHeight="@dimen/li_min_height" android:text="@string/logout" />
+</LinearLayout>

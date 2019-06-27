@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:gravity="center_vertical" android:id="@id/text" android:background="?selector" android:paddingLeft="@dimen/spacing_large" android:paddingRight="@dimen/spacing_large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/li_min_height" android:maxLines="1" android:drawablePadding="@dimen/spacing_large" style="@style/Ziba.Widget.TextView.Dialog"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

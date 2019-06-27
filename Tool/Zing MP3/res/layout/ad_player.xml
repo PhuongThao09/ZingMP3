@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/adBox" android:background="#ff000000" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.adtima.ads.ZAdsBanner android:layout_gravity="center" android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" />
+    <ImageButton android:layout_gravity="center|right|top" android:id="@id/btnClose" android:background="@null" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="20.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_ad" />
+</FrameLayout>

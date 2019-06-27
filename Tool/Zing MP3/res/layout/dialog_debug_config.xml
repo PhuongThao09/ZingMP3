@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_gravity="center" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="270.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/debug" android:paddingLeft="@dimen/spacing_dialog" android:paddingTop="@dimen/spacing_dialog" android:paddingRight="@dimen/spacing_dialog" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="DEBUG" style="@style/Ziba.Widget.TextView.Header.Dialog" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/debugLog" android:background="?selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Send debug log" android:maxLines="1" android:layout_weight="1.0" />
+                <android.support.v7.widget.SwitchCompat android:id="@id/switchDebugLog" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <Button android:id="@id/btnCopyUserId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Copy" android:layout_alignParentRight="true" style="@style/Ziba.Widget.Button.Colored" />
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:id="@id/lblUserId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="User id" android:layout_toLeftOf="@id/btnCopyUserId" android:layout_alignParentLeft="true" />
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog.Subtitle" android:id="@id/tvUserId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btnCopyUserId" android:layout_below="@id/lblUserId" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <Button android:id="@id/btnCopyDeviceId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Copy" android:layout_alignParentRight="true" style="@style/Ziba.Widget.Button.Colored" />
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:id="@id/lblDeviceId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Device id" android:layout_toLeftOf="@id/btnCopyDeviceId" android:layout_alignParentLeft="true" />
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog.Subtitle" android:id="@id/tvDeviceId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btnCopyDeviceId" android:layout_below="@id/lblDeviceId" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/versionCode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="App version code" />
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog.Subtitle" android:id="@id/tvVersionCode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/divLoading" android:background="?dividerColor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/divider" />
+        <include android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/loading" />
+        <View android:id="@id/divAds" android:background="?dividerColor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/divider" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ads" android:padding="@dimen/spacing_dialog" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Ads" style="@style/Ziba.Widget.TextView.Header.Dialog" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/zoneDev" android:background="?selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Use dev zone" android:maxLines="1" android:layout_weight="1.0" />
+                <android.support.v7.widget.SwitchCompat android:id="@id/switchZoneDev" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/admob" android:background="?selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Admob" android:maxLines="1" android:layout_weight="1.0" />
+                <android.support.v7.widget.SwitchCompat android:id="@id/switchAdmob" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bannerSlider" android:background="?selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Slider" android:maxLines="1" android:layout_weight="1.0" />
+                <android.support.v7.widget.SwitchCompat android:id="@id/switchBannerHome" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bannerPl" android:background="?selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Player" android:maxLines="1" android:layout_weight="1.0" />
+                <android.support.v7.widget.SwitchCompat android:id="@id/switchBannerPl" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/welcome" android:background="?selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Welcome" android:maxLines="1" android:layout_weight="1.0" />
+                <android.support.v7.widget.SwitchCompat android:id="@id/switchWelcome" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/interstitial" android:background="?selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Interstitial" android:maxLines="1" android:layout_weight="1.0" />
+                <android.support.v7.widget.SwitchCompat android:id="@id/switchInterstitial" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/preroll" android:background="?selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Preroll" android:maxLines="1" android:layout_weight="1.0" />
+                <android.support.v7.widget.SwitchCompat android:id="@id/switchPreroll" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/getId" android:background="?selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <EditText android:id="@id/edtId" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Song/album id here" android:maxLines="1" android:layout_weight="1.0" />
+                <Button android:id="@id/btnGetId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get" android:layout_alignParentRight="true" style="@style/Ziba.Widget.Button.Colored" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AdtimaSdk info" />
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog.Subtitle" android:id="@id/tvAdtimaSdkInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="abc 123" />
+            </LinearLayout>
+            <Button android:id="@id/reset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="RESET" style="@style/Ziba.Widget.Button.Colored" />
+        </LinearLayout>
+        <View android:id="@id/divBoss" android:background="?dividerColor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/divider" />
+        <LinearLayout android:orientation="vertical" android:id="@id/boss" android:paddingLeft="@dimen/spacing_dialog" android:paddingTop="@dimen/spacing_dialog" android:paddingRight="@dimen/spacing_dialog" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="BOSS" style="@style/Ziba.Widget.TextView.Header.Dialog" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/serverDev" android:background="?selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Use dev server" android:maxLines="1" android:layout_weight="1.0" />
+                <android.support.v7.widget.SwitchCompat android:id="@id/switchDevServer" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/debugToast" android:background="?selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Show API info toast" android:maxLines="1" android:layout_weight="1.0" />
+                <android.support.v7.widget.SwitchCompat android:id="@id/switchDebugToast" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/region" android:background="?selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="VN" android:maxLines="1" android:layout_weight="1.0" />
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:id="@id/tvFromVn" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TRUE" />
+            </LinearLayout>
+            <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/crash" android:background="?selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:text="Crash test" android:maxLines="1" />
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <Button android:id="@id/btnCopyRegId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Copy" android:layout_alignParentRight="true" style="@style/Ziba.Widget.Button.Colored" />
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:id="@id/lblRegId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reg id" android:layout_toLeftOf="@id/btnCopyRegId" android:layout_alignParentLeft="true" />
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog.Subtitle" android:ellipsize="end" android:id="@id/tvRegId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@id/btnCopyRegId" android:layout_below="@id/lblRegId" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingTop="@dimen/spacing_dialog_margin_title" android:paddingBottom="@dimen/spacing_dialog_margin_title" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/languageVn" android:background="?selector" android:paddingLeft="@dimen/spacing_dialog" android:paddingRight="@dimen/spacing_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/li_min_height">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/settings_language_vi" android:layout_weight="1.0" style="@style/Ziba.Widget.TextView.Dialog" />
+        <RadioButton android:id="@id/rbVn" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/languageEng" android:background="?selector" android:paddingLeft="@dimen/spacing_dialog" android:paddingRight="@dimen/spacing_dialog" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/li_min_height">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_language_eng" android:layout_weight="1.0" style="@style/Ziba.Widget.TextView.Dialog" />
+        <RadioButton android:id="@id/rbEng" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/languageDefault" android:background="?selector" android:paddingLeft="@dimen/spacing_dialog" android:paddingRight="@dimen/spacing_dialog" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/li_min_height">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_language_default" android:layout_weight="1.0" style="@style/Ziba.Widget.TextView.Dialog" />
+        <RadioButton android:id="@id/rbDefault" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

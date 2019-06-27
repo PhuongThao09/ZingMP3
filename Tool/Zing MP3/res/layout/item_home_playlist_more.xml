@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/allPlaylist" android:background="?selectorBold" android:padding="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_view_all_playlist" android:tint="?colorDrawableTint" />
+    <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:text="@string/more_playlist" />
+</LinearLayout>

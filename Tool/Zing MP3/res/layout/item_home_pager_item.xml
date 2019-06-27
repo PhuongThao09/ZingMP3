@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?defaultBigThumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?selector"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/btnPlay" android:background="?selector" android:padding="@dimen/spacing_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fast_play" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <android.support.v4.widget.Space android:id="@id/space" android:layout_width="fill_parent" android:layout_height="@dimen/spacing_normal" android:layout_toLeftOf="@id/btnPlay" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/imgThumb" android:layout_width="@dimen/li_album_thumb" android:layout_height="@dimen/li_album_thumb" android:layout_marginLeft="@dimen/spacing_card" android:scaleType="fitXY" android:layout_above="@id/space" />
+        <TextView android:textColor="@color/white" android:gravity="left" android:id="@id/tvSubtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_card" android:layout_marginTop="@dimen/spacing_text" android:maxLines="2" android:singleLine="false" android:layout_toLeftOf="@id/btnPlay" android:layout_toRightOf="@id/imgThumb" android:layout_above="@id/space" android:layout_alignWithParentIfMissing="true" style="@style/Ziba.Widget.TextView" />
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="left" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_card" android:singleLine="true" android:layout_toLeftOf="@id/btnPlay" android:layout_toRightOf="@id/imgThumb" android:layout_above="@id/tvSubtitle" android:layout_alignWithParentIfMissing="true" style="@style/Ziba.Widget.TextView.Primary" />
+    </RelativeLayout>
+    <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/loading" />
+</FrameLayout>

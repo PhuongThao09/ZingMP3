@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_normal" android:text="@string/settings_appearance" style="@style/Ziba.Widget.TextView.Header" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llTheme" android:background="?selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_theme" style="@style/Ziba.Widget.TextView.Primary" />
+            <TextView android:id="@id/tvTheme" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Ziba.Widget.TextView" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llLanguage" android:background="?selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_language" style="@style/Ziba.Widget.TextView.Primary" />
+            <TextView android:id="@id/tvLang" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="English" style="@style/Ziba.Widget.TextView" />
+        </LinearLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_normal" android:text="@string/settings_player" style="@style/Ziba.Widget.TextView.Header" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llMusicQuality" android:background="@drawable/selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_music_quality" style="@style/Ziba.Widget.TextView.Primary" />
+            <TextView android:id="@id/tvMusicQuality" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Ziba.Widget.TextView" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llVideoQuality" android:background="@drawable/selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_video_quality" style="@style/Ziba.Widget.TextView.Primary" />
+            <TextView android:id="@id/tvVideoQuality" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Ziba.Widget.TextView" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llShake" android:background="?selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_shake_to_switch_song" style="@style/Ziba.Widget.TextView.Primary" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_off_to_save_battery" style="@style/Ziba.Widget.TextView" />
+            </LinearLayout>
+            <android.support.v7.widget.SwitchCompat android:id="@id/switchShakeToSwitchSong" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llTaskRemoved" android:background="?selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?listPreferredItemHeight">
+            <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/settings_stop_when_task_removed" android:layout_weight="1.0" style="@style/Ziba.Widget.TextView.Primary" />
+            <android.support.v7.widget.SwitchCompat android:id="@id/switchTaskRemoved" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/Ziba.Widget.TextView.Primary" />
+        </LinearLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_normal" android:text="@string/settings_download" style="@style/Ziba.Widget.TextView.Header" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llDownload" android:background="?selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_download_quality" style="@style/Ziba.Widget.TextView.Primary" />
+            <TextView android:id="@id/tvDownloadQuality" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="128 kps" style="@style/Ziba.Widget.TextView" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llDownloadLocation" android:background="?selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_download_location" style="@style/Ziba.Widget.TextView.Primary" />
+            <TextView android:id="@id/tvDownloadLocation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="3.7 GB External" style="@style/Ziba.Widget.TextView" />
+        </LinearLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_normal" android:text="@string/settings_headphone" style="@style/Ziba.Widget.TextView.Header" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llPauseOnUnplug" android:background="?selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?listPreferredItemHeight">
+            <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/settings_stop_when_unplug" android:layout_weight="1.0" style="@style/Ziba.Widget.TextView.Primary" />
+            <android.support.v7.widget.SwitchCompat android:id="@id/switchPauseOnUnplug" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/Ziba.Widget.TextView.Primary" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llPlayOnPlug" android:background="?selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?listPreferredItemHeight">
+            <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/settings_continues_play_when_plug" android:layout_weight="1.0" style="@style/Ziba.Widget.TextView.Primary" />
+            <android.support.v7.widget.SwitchCompat android:id="@id/switchPlayOnPlug" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/Ziba.Widget.TextView.Primary" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llTripleTap" android:background="?selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_triple_tap_to_next_prev" style="@style/Ziba.Widget.TextView.Primary" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_off_triple_tap" style="@style/Ziba.Widget.TextView" />
+            </LinearLayout>
+            <android.support.v7.widget.SwitchCompat android:id="@id/switchTripleTapToNextPrev" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_normal" android:text="@string/settings_bluetooth" style="@style/Ziba.Widget.TextView.Header" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llShowInfoOnBluetooth" android:background="?selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/tvShowInfoBlueTooth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_show_bluetooth_info" style="@style/Ziba.Widget.TextView.Primary" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_off_bluetooth" style="@style/Ziba.Widget.TextView" />
+            </LinearLayout>
+            <android.support.v7.widget.SwitchCompat android:id="@id/switchShowInfoOnBluetooth" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_normal" android:text="@string/settings_lock_screem" style="@style/Ziba.Widget.TextView.Header" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llHQImgInLockScreen" android:background="?selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?listPreferredItemHeight">
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/settings_show_image_with_quaility_on_lock_screen" android:layout_weight="1.0" style="@style/Ziba.Widget.TextView.Primary" />
+            <android.support.v7.widget.SwitchCompat android:id="@id/switchHQImgOnLockScreen" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/Ziba.Widget.TextView.Primary" />
+        </LinearLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_normal" android:text="@string/settings_sound" style="@style/Ziba.Widget.TextView.Header" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llSoundFading" android:background="?selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?listPreferredItemHeight">
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/settings_fade_sound" android:layout_weight="1.0" style="@style/Ziba.Widget.TextView.Primary" />
+            <android.support.v7.widget.SwitchCompat android:id="@id/switchSoundFading" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Ziba.Widget.TextView.Primary" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llStopWhenLostFocus" android:background="?selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?listPreferredItemHeight">
+            <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/settings_stop_sound_when_lost_focus" android:layout_weight="1.0" style="@style/Ziba.Widget.TextView.Primary" />
+            <android.support.v7.widget.SwitchCompat android:id="@id/switchStopOnLostFocus" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/Ziba.Widget.TextView.Primary" />
+        </LinearLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_normal" android:text="@string/settings_other" style="@style/Ziba.Widget.TextView.Header" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llPushNotification" android:background="?selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?listPreferredItemHeight">
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/settings_push_notification" android:layout_weight="1.0" style="@style/Ziba.Widget.TextView.Primary" />
+            <android.support.v7.widget.SwitchCompat android:id="@id/switchPushNotification" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Ziba.Widget.TextView.Primary" />
+        </LinearLayout>
+        <TextView android:id="@id/tvClearSearchHistory" android:background="@drawable/selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight" android:text="@string/settings_clear_history" style="@style/Ziba.Widget.TextView.Primary" />
+    </LinearLayout>
+</ScrollView>

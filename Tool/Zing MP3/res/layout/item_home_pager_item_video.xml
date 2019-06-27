@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?defaultBigThumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?selector"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zing.mp3.ui.widget.FgImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/ic_fast_play_video_big" android:scaleType="centerCrop" />
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v4.widget.Space android:id="@id/space" android:layout_width="fill_parent" android:layout_height="@dimen/spacing_normal" android:layout_alignParentBottom="true" />
+        <TextView android:textColor="@color/white" android:id="@id/tvSubtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_card" android:layout_marginTop="@dimen/spacing_text" android:layout_marginRight="@dimen/spacing_card" android:maxLines="2" android:singleLine="false" android:layout_above="@id/space" style="@style/Ziba.Widget.TextView" />
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_card" android:layout_marginRight="@dimen/spacing_card" android:singleLine="true" android:layout_above="@id/tvSubtitle" style="@style/Ziba.Widget.TextView.Primary" />
+    </RelativeLayout>
+    <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/loading" />
+</FrameLayout>

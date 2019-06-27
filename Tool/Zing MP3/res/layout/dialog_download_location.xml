@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/spacing_dialog_margin_title" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/internal" android:background="?selector" android:paddingLeft="@dimen/spacing_dialog" android:paddingRight="@dimen/spacing_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_dialog_margin_title" android:minHeight="@dimen/li_min_height">
+        <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/internal" style="@style/Ziba.Widget.TextView.Dialog" />
+            <TextView android:id="@id/tvInternalSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free" style="@style/Ziba.Widget.TextView.Dialog.SubTitle" />
+        </LinearLayout>
+        <RadioButton android:id="@id/rdInternal" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/external" android:background="?selector" android:paddingLeft="@dimen/spacing_dialog" android:paddingRight="@dimen/spacing_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/li_min_height">
+        <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:id="@id/tvExternal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sdcard" style="@style/Ziba.Widget.TextView.Dialog" />
+            <TextView android:id="@id/tvExternalSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free" style="@style/Ziba.Widget.TextView.Dialog.SubTitle" />
+        </LinearLayout>
+        <RadioButton android:id="@id/rdExternal" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="?topicDividerColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textStyle="bold" android:id="@id/tvTitle" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large_minus_card_padding_bottom" android:textAllCaps="true" style="@style/Ziba.Widget.TextView.Header" />
+    <TextView android:gravity="center_horizontal" android:id="@id/tvDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" />
+</LinearLayout>

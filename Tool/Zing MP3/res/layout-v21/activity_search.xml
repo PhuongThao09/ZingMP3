@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:minHeight="?actionBarSize" android:elevation="@dimen/toolbar_elevation" app:popupTheme="@style/Theme.AppCompat.Light.NoActionBar">
+        <FrameLayout android:background="@color/transparent" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+            <EditText android:textColor="?tcSearchBar" android:textColorHint="?tcSearchBarHint" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/etSearchBar" android:background="@color/transparent" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/search_hint" android:cursorVisible="true" android:maxLines="1" android:singleLine="true" android:imeOptions="actionSearch|flagNoExtractUi" />
+        </FrameLayout>
+    </android.support.v7.widget.Toolbar>
+    <android.support.design.widget.TabLayout android:id="@id/tabs" android:background="?colorPrimary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/toolbar_elevation" />
+    <android.support.v4.view.ViewPager android:id="@id/viewPager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <include layout="@layout/playbar" />
+    <FrameLayout android:id="@id/labanBanner" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/selector">
+        <ImageView android:id="@id/imgBanner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/btnClose" android:background="@drawable/selector" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_close_dark" android:scaleType="center" />
+    </FrameLayout>
+</LinearLayout>

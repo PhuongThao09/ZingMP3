@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_horizontal" android:background="@drawable/overlay_bottom_dark" android:padding="@dimen/floating_lyrics_remove_view_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/img_remove" android:layout_width="@dimen/floating_lyrics_remove_size" android:layout_height="@dimen/floating_lyrics_remove_size" android:src="@drawable/ic_fl_remove" />
+</FrameLayout>

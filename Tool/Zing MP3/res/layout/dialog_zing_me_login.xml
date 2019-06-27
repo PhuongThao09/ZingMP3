@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.zing.zalo.zalosdk.core.exception.ZingMeLoginView android:textSize="20.0sp" android:textStyle="italic" android:textColor="#ff2b579a" android:layout_gravity="center" android:id="@id/zing_me_login_view" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:inputBackground="@drawable/zalosdk_border06" custom:usernameHint="Tên đăng nhập" custom:passwordHint="Mật khẩu" custom:buttonText="Đăng nhập" custom:buttonBackground="@drawable/zalosdk_border07" />
+</LinearLayout>

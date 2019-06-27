@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/btnOnlineDetail" android:background="?selectorBold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/li_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:layout_marginRight="@dimen/spacing_normal" android:src="@drawable/ic_view_all_playlist" android:tint="?colorDrawableTint" />
+    <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:layout_gravity="center_vertical" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

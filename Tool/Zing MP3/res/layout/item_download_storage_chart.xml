@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?colorBackgroundBold" android:layout_width="fill_parent" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zing.mp3.ui.widget.StoragePieChart android:id="@id/chart" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/spacing_large" android:layout_marginTop="@dimen/spacing_large" android:layout_marginBottom="@dimen/spacing_large" android:layout_weight="1.0" app:spc_zingMP3="?colorAccent" app:spc_others="@color/downloadStorageOthers" app:spc_free="@color/downloadStorageFree" app:spc_textColor="?tcPrimary" app:spc_textSize="@dimen/text_primary" app:spc_holeColor="?colorBackgroundBold" app:spc_bigRadiusMinusLittleRadiusSize="25.0dip" />
+    <RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/spacing_large" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/spacing_large" android:layout_marginRight="@dimen/spacing_large" android:layout_weight="1.0">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:id="@id/imgOthers" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="@dimen/spacing_normal" android:src="@color/downloadStorageOthers" android:scaleType="fitXY" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_primary" android:textColor="?tcPrimary" android:id="@id/tvOthersSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imgOthers" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="?tcSecondary" android:id="@id/tvOthers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/storage_others" android:layout_toRightOf="@id/imgOthers" android:layout_below="@id/tvOthersSize" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_normal" android:layout_above="@id/center">
+            <ImageView android:id="@id/imgZingMP3" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="@dimen/spacing_normal" android:src="?colorAccent" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_primary" android:textColor="?tcPrimary" android:id="@id/tvZingMP3Size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imgZingMP3" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="?tcSecondary" android:id="@id/tvZingMP3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/storage_download" android:layout_toRightOf="@id/imgZingMP3" android:layout_below="@id/tvZingMP3Size" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_normal" android:layout_below="@id/center">
+            <ImageView android:id="@id/imgFree" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="@dimen/spacing_normal" android:src="@color/downloadStorageFree" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_primary" android:textColor="?tcPrimary" android:id="@id/tvFreeSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imgFree" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/text" android:textColor="?tcSecondary" android:id="@id/tvFree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/storage_available" android:layout_toRightOf="@id/imgFree" android:layout_below="@id/tvFreeSize" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

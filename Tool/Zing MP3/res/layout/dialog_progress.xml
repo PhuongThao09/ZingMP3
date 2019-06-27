@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:padding="@dimen/spacing_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/loading" />
+    <TextView android:textSize="@dimen/dialog_title_text_size" android:textColor="?tcDialog" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/loading" />
+</LinearLayout>

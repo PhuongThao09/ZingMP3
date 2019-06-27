@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_floating_lyrics" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imgThumb" android:visibility="invisible" android:layout_width="@dimen/floating_lyrics_thumbnail_size" android:layout_height="@dimen/floating_lyrics_thumbnail_size" />
+    <TextView android:textSize="@dimen/text_lyrics_focus" android:textColor="@color/dark_text_lyrics_focus" android:gravity="center" android:id="@id/tvLrc" android:background="@drawable/bg_floating_lyrics_focus_line" android:padding="@dimen/spacing_normal" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" />
+    <ListView android:scrollbarStyle="outsideOverlay" android:gravity="center" android:id="@id/listView" android:visibility="invisible" android:fadingEdgeLength="@dimen/fading_edge_length_short" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/selector_dark" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:dividerHeight="0.0dip" android:layout_below="@id/toolbarContainer" android:requiresFadingEdge="vertical" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/toolbarContainer" android:background="@drawable/bg_floating_lyrics_toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/li_song_thumb">
+        <ImageButton android:id="@id/btnMinimize" android:background="@drawable/selector_dark_borderless" android:layout_width="@dimen/li_song_thumb" android:layout_height="@dimen/li_song_thumb" android:src="@drawable/ic_fl_minimize" />
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:popupTheme="@style/Ziba.Theme.Dark" app:theme="@style/Ziba.Theme.Dark">
+            <ImageButton android:id="@id/btnMore" android:background="@drawable/selector_dark_borderless" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_overflow" />
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/toolbar" android:layout_toRightOf="@id/btnMinimize">
+            <TextView android:textSize="@dimen/text_primary" android:textColor="@color/dark_textPrimary" android:ellipsize="end" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/text" android:textColor="@color/dark_textSecondary" android:ellipsize="end" android:id="@id/tvArtist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageButton android:id="@id/btnResize" android:background="@null" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_fl_resize" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <include android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/loading" />
+    <TextView android:textSize="@dimen/text_primary" android:textColor="@color/dark_textPrimary" android:gravity="center" android:id="@id/tvError" android:padding="@dimen/spacing_normal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

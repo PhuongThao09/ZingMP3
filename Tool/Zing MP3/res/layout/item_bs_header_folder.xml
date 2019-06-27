@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/spacing_large" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0sp" android:textColor="?tcSecondary" android:gravity="center" android:id="@id/tvThumb" android:background="@drawable/default_folder" android:layout_width="@dimen/li_song_thumb" android:layout_height="@dimen/li_song_thumb" android:layout_marginRight="@dimen/spacing_normal" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btnFollow" android:layout_toRightOf="@id/tvThumb" android:layout_centerVertical="true">
+        <TextView android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/Ziba.Widget.TextView.Dialog" />
+        <TextView android:id="@id/tvPath" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_text" style="@style/Ziba.Widget.TextView.Dialog.SubTitle" />
+    </LinearLayout>
+</RelativeLayout>

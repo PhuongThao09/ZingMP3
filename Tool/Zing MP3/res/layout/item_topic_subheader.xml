@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zing.mp3.ui.widget.FgLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/li_min_height" android:foreground="?selector"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/text" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textAllCaps="true" style="@style/Ziba.Widget.TextView.Primary" />
+</com.zing.mp3.ui.widget.FgLinearLayout>

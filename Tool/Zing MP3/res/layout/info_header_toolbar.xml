@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zing.mp3.ui.widget.InfoHeaderLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/info" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_centerVertical="true" app:theme="@style/Ziba.Theme.Dark"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tvTitle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Ziba.Widget.TextView.Toolbar.Title" />
+    <TextView android:id="@id/tvSubTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Ziba.Widget.TextView.Toolbar.Subtitle" />
+</com.zing.mp3.ui.widget.InfoHeaderLayout>

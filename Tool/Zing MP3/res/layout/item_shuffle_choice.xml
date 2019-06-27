@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?colorBackgroundBold" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:gravity="center_vertical" android:id="@id/shuffle" android:background="?selectorBorderless" android:paddingLeft="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/li_min_height" android:text="@string/shuffle" android:drawableLeft="@drawable/ic_shuffle_round" android:drawablePadding="@dimen/spacing_normal" />
+    <ImageView android:layout_gravity="right" android:id="@id/btnMultiChoice" android:background="?selectorBorderless" android:layout_width="@dimen/li_song_menu_width" android:layout_height="fill_parent" android:src="@drawable/ic_choose_item" android:scaleType="center" android:tint="?colorDrawableTint" />
+</FrameLayout>

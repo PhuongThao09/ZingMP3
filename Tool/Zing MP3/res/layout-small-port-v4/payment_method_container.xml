@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zalosdk_background_rectangle_corner_blue_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/payment_method_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="37.0dip">
+        <ImageView android:id="@id/channel_back" android:layout_width="22.0dip" android:layout_height="28.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/i_back" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_centerInParent="true">
+            <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/payment_method_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0px" />
+            <TextView android:textSize="20.0sp" android:textColor="#ffed750a" android:gravity="center_horizontal" android:id="@id/payment_method_amount_disable" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:id="@id/zalosdk_exit_ctl" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/i_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ffd3d7e4" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

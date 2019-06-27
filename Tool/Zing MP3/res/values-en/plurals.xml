@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cannot_delete_song">
+        <item quantity="other">"Can't delete %d songs"</item>
+        <item quantity="one">"Can't delete %d song"</item>
+    </plurals>
+    <plurals name="delete_song">
+        <item quantity="other">Deleted %d songs</item>
+        <item quantity="one">Deleted %d song</item>
+    </plurals>
+    <plurals name="dialog_restore_sync">
+        <item quantity="other">"There are %s songs you've downloaded to device. Do you want to add to Restore list?"</item>
+        <item quantity="one">"There is %s song you've downloaded to device. Do you want to add to Restore list?"</item>
+    </plurals>
+    <plurals name="follower">
+        <item quantity="other">%s followers</item>
+        <item quantity="one">%s follower</item>
+    </plurals>
+    <plurals name="result">
+        <item quantity="other">%s results</item>
+        <item quantity="one">%s result</item>
+    </plurals>
+    <plurals name="song">
+        <item quantity="other">%s songs</item>
+        <item quantity="one">%s song</item>
+    </plurals>
+    <plurals name="timespan_day_ago">
+        <item quantity="other">%d days ago</item>
+        <item quantity="one">%d day ago</item>
+    </plurals>
+    <plurals name="timespan_hour_ago">
+        <item quantity="other">%d hours ago</item>
+        <item quantity="one">%d hour ago</item>
+    </plurals>
+    <plurals name="timespan_min_ago">
+        <item quantity="other">%d mins ago</item>
+        <item quantity="one">%d min ago</item>
+    </plurals>
+    <plurals name="timespan_month_ago">
+        <item quantity="other">%d months ago</item>
+        <item quantity="one">%d month ago</item>
+    </plurals>
+    <plurals name="timespan_sec_ago">
+        <item quantity="other">%d secs ago</item>
+        <item quantity="one">%d sec ago</item>
+    </plurals>
+    <plurals name="timespan_week_ago">
+        <item quantity="other">%d weeks ago</item>
+        <item quantity="one">%d week ago</item>
+    </plurals>
+    <plurals name="timespan_year_ago">
+        <item quantity="other">%d years ago</item>
+        <item quantity="one">%d year ago</item>
+    </plurals>
+</resources>

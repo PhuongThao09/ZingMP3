@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/commentTitle" android:background="?selectorBold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/li_min_height">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:layout_marginRight="@dimen/spacing_normal" android:src="@drawable/ic_comment" android:tint="?colorDrawableTint" />
+        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:textColor="?colorAccent" android:layout_gravity="center_vertical" android:id="@id/tvComment" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/btnArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:layout_marginRight="@dimen/spacing_normal" android:src="@drawable/ic_view_more" android:tint="?colorDrawableTint" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/item_post_comment" />
+</LinearLayout>

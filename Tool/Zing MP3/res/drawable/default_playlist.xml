@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/li_album_thumb" android:width="@dimen/li_album_thumb" />
+            <solid android:color="@color/defaultThumbBg" />
+            <corners android:radius="@dimen/image_rounded_radius" />
+        </shape>
+    </item>
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/ic_default_playlist" />
+    </item>
+</layer-list>

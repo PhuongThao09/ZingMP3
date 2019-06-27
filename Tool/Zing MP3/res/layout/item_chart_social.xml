@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selector"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/imgArtist0" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/imgArtist1" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/spacing_normal" android:layout_weight="1.0" />
+        <ImageView android:id="@id/imgArtist2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/spacing_normal" android:layout_weight="1.0" />
+        <ImageView android:id="@id/imgArtist3" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/spacing_normal" android:layout_weight="1.0" />
+        <ImageView android:id="@id/imgArtist4" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/spacing_normal" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

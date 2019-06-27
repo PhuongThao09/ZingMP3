@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zing.mp3.ui.widget.FgRelativeLayout android:orientation="vertical" android:background="@drawable/bg_login_mymusic" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="@dimen/user_info_height" android:foreground="?selector"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgAvatar" android:background="@drawable/bg_avatar" android:padding="@dimen/disc_border_size" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/imgArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:layout_marginRight="@dimen/spacing_normal" android:layout_toLeftOf="@id/imgArrow" android:layout_toRightOf="@id/imgAvatar" android:layout_centerVertical="true">
+        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+        <ImageView android:id="@id/imgType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_small" android:src="@drawable/ic_vip" />
+    </LinearLayout>
+</com.zing.mp3.ui.widget.FgRelativeLayout>

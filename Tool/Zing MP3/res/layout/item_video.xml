@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zing.mp3.ui.widget.FgRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selector"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zing.mp3.ui.widget.FgImageView android:id="@id/imgThumb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/ic_fast_play_video" />
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/dark_textPrimary" android:id="@id/tvPlays" android:background="@drawable/bg_plays" android:paddingLeft="@dimen/spacing_small" android:paddingRight="@dimen/spacing_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_small" android:layout_marginTop="@dimen/spacing_small" android:drawableLeft="@drawable/ic_plays_thumb" android:drawablePadding="@dimen/spacing_small" />
+    <TextView android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_card" android:layout_below="@id/imgThumb" style="@style/Ziba.Widget.TextView.Primary" />
+    <TextView android:id="@id/tvArtist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tvTitle" style="@style/Ziba.Widget.TextView" />
+</com.zing.mp3.ui.widget.FgRelativeLayout>

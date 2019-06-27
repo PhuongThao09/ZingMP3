@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <FrameLayout android:id="@id/center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ScrollView android:id="@id/content" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_normal">
+                    <TableRow android:id="@id/realname" android:paddingTop="@dimen/spacing_normal" android:paddingBottom="@dimen/spacing_normal">
+                        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/artist_real_name" />
+                        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:gravity="center_vertical" android:id="@id/tvRealName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_large" android:layout_weight="1.0" />
+                    </TableRow>
+                    <TableRow android:id="@id/birthday" android:paddingTop="@dimen/spacing_normal" android:paddingBottom="@dimen/spacing_normal">
+                        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/artist_birthday" />
+                        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:gravity="center_vertical" android:id="@id/tvBirthday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_large" android:layout_weight="1.0" />
+                    </TableRow>
+                    <TableRow android:id="@id/cate" android:paddingTop="@dimen/spacing_normal" android:paddingBottom="@dimen/spacing_normal">
+                        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/artist_genre" />
+                        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:textColor="?colorAccent" android:gravity="center_vertical" android:id="@id/tvCate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_large" android:layout_weight="1.0" />
+                    </TableRow>
+                    <TableRow android:id="@id/nationality" android:paddingTop="@dimen/spacing_normal" android:paddingBottom="@dimen/spacing_normal">
+                        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/artist_nationality" />
+                        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:gravity="center_vertical" android:id="@id/tvNationality" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_large" android:layout_weight="1.0" />
+                    </TableRow>
+                </TableLayout>
+                <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:textSize="@dimen/text" android:id="@id/tvBio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_normal" android:lineSpacingExtra="@dimen/spacing_line_extra" />
+            </LinearLayout>
+        </ScrollView>
+        <include android:layout_gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/loading" />
+        <ViewStub android:layout_gravity="center" android:id="@id/vsError" android:layout="@layout/error" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <include layout="@layout/playbar" />
+</LinearLayout>

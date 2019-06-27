@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/Ziba.TextAppearance" android:gravity="center" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.zing.mp3.ui.widget.VerticalSeekBar android:layout_gravity="center_horizontal" android:id="@id/seekBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_small" android:layout_above="@id/textView" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

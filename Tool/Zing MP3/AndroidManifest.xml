@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="40305" android:versionName="4.0.3" package="com.zing.mp3" platformBuildVersionCode="25" platformBuildVersionName="7.1.1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.zing.mp3.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.zing.zalo.permission.ACCESS_THIRD_PARTY_APP_AUTHORIZATION" />
+    <permission android:name="com.zing.mp3.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <application android:theme="@style/Ziba.Theme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.zing.mp3.ZibaApp" android:allowBackup="false" android:supportsRtl="false" android:roundIcon="@mipmap/ic_launcher">
+        <meta-data android:name="com.zing.mp3.ui.widget.GlideConfiguration" android:value="GlideModule" />
+        <meta-data android:name="appID" android:value="@string/zalo_app_id" />
+        <meta-data android:name="configCrashTracking" android:value="false" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_app_id" />
+        <meta-data android:name="io.fabric.ApiKey" android:value="d47a34a36212d686093d77bef7ac57cb97c263d8" />
+        <activity android:theme="@style/Ziba.Theme.Splash" android:name="com.zing.mp3.ui.activity.SplashActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.zing.mp3.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="mp3.zing.vn" />
+                <data android:host="m.mp3.zing.vn" />
+                <data android:pathPrefix="/bai-hat/" />
+                <data android:pathPrefix="/album/" />
+                <data android:pathPrefix="/playlist/" />
+                <data android:pathPrefix="/nghe-si/" />
+                <data android:pathPrefix="/video-clip/" />
+                <data android:pathPrefix="/tim-kiem/bai-hat" />
+                <data android:pathPrefix="/tim-kiem/video" />
+                <data android:pathPrefix="/tim-kiem/playlist" />
+                <data android:pathPrefix="/chu-de/" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="mp3.zing.vn" />
+                <data android:host="m.mp3.zing.vn" />
+                <data android:pathPrefix="/bai-hat/" />
+                <data android:pathPrefix="/album/" />
+                <data android:pathPrefix="/playlist/" />
+                <data android:pathPrefix="/nghe-si/" />
+                <data android:pathPrefix="/video-clip/" />
+                <data android:pathPrefix="/tim-kiem/bai-hat" />
+                <data android:pathPrefix="/tim-kiem/video" />
+                <data android:pathPrefix="/tim-kiem/playlist" />
+                <data android:pathPrefix="/chu-de/" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="mp3.zing.vn" />
+                <data android:host="m.mp3.zing.vn" />
+                <data android:pathPrefix="/bai-hat/" />
+                <data android:pathPrefix="/album/" />
+                <data android:pathPrefix="/playlist/" />
+                <data android:pathPrefix="/nghe-si/" />
+                <data android:pathPrefix="/video-clip/" />
+                <data android:pathPrefix="/tim-kiem/bai-hat" />
+                <data android:pathPrefix="/tim-kiem/video" />
+                <data android:pathPrefix="/tim-kiem/playlist" />
+                <data android:pathPrefix="/chu-de/" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="application/com.zing.mp3" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="zingmp3" />
+                <data android:host="song" />
+                <data android:host="album" />
+                <data android:host="video" />
+                <data android:host="playlist" />
+                <data android:host="artist" />
+                <data android:host="search" />
+                <data android:host="home" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.zing.mp3.ui.activity.MainActivity" android:launchMode="singleTask" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.HomeDetailActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.ArtistActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.AlbumsActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.VideosActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.SongsActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.ArtistsActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.ArtistInfoActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.CommentsActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.AlbumActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.AlbumInfoActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.VideoPlayerActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.zing.mp3.ui.activity.SocialArtistActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.ChartActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.RealtimeActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:theme="@style/Ziba.Theme.Player" android:name="com.zing.mp3.ui.activity.PlayerActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.SearchActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.zing.mp3.ui.activity.SearchResultActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.SearchFilterActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.CategoryActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.TopicActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.CategoryDetailActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.TopicCategoryActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.NotificationsActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.LocalMusicActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.LocalSongsActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.LocalPlaylistsActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.LocalAlbumsActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.LocalArtistsActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.SelectSongsActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.EditSongsActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.ActionSongsActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.LocalAlbumActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.LocalPlaylistActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.LocalArtistActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:theme="@style/Ziba.Theme.Splash" android:name="com.zing.mp3.ui.activity.LoginActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@style/Ziba.Theme.Splash" android:name="com.zing.mp3.ui.activity.LoginZingActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.zing.mp3.ui.activity.UserInfoActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.SyncOldSessionActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.FavoritesActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.MyPlaylistsActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.DownloadActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:theme="@style/Ziba.Theme.Share" android:name="com.zing.mp3.ui.activity.ShareActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.UploadsActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.FollowsActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.SongInfoActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.SettingsActivity" android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.zing.mp3.ui.activity.SongHistoryActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.EqActivity" android:process="@string/player_process_name" android:screenOrientation="sensorPortrait" />
+        <activity android:theme="@style/Ziba.Theme.TransparentStatusBar" android:name="com.zing.mp3.ui.activity.IntroActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:theme="@style/Ziba.Theme.DialogActivity" android:name="com.zing.mp3.ui.activity.SpeechRecognizerActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.zing.mp3.ui.activity.RestoreActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.zing.zalo.zalosdk.oauth.WebLoginActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.adtima.ads.ZAdsActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.facebook.ads.InterstitialAdActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" />
+        <service android:label="Zing Player" android:name="com.zing.mp3.player.PlayerService" android:enabled="true" android:process="@string/player_process_name" />
+        <service android:name="com.zing.mp3.downloader.DownloadService" />
+        <service android:name="com.zing.mp3.GcmIntentService" />
+        <service android:name="com.zing.mp3.log.LoggingService" />
+        <service android:name="com.zing.mp3.scanner.AudioScannerService" />
+        <service android:name="com.zing.mp3.downloader.StorageTransporterService" />
+        <service android:label="@string/settings_menu_floating_lyrics" android:icon="@drawable/ic_drawer_floating_lyrics" android:name="com.zing.mp3.floatinglyrics.FloatingLyricsTileService" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.zing.mp3.player.NotifBroadcastReceiver" android:process="@string/player_process_name" />
+        <receiver android:name="com.zing.mp3.player.MediaButtonReceiver" android:process="@string/player_process_name">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.zing.mp3.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.zing.mp3" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.zing.mp3.ScheduledGcmNotificationReceiver" />
+        <receiver android:name="com.zing.mp3.SDCardReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <receiver android:label="Zing MP3 (4x1)" android:name="com.zing.mp3.ui.appwidget.ZibaAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.zing.mp3.action.STATE_CHANGED" />
+                <action android:name="com.zing.mp3.action.SONG_CHANGED" />
+                <action android:name="com.zing.mp3.action.SHUFFLE_STATE_CHANGED" />
+                <action android:name="com.zing.mp3.action.REPEAT_MODE_CHANGED" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_4x1" />
+        </receiver>
+        <receiver android:label="Zing MP3 (4x2)" android:name="com.zing.mp3.ui.appwidget.ZibaAppWidgetLarge">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.zing.mp3.action.STATE_CHANGED" />
+                <action android:name="com.zing.mp3.action.SONG_CHANGED" />
+                <action android:name="com.zing.mp3.action.SHUFFLE_STATE_CHANGED" />
+                <action android:name="com.zing.mp3.action.REPEAT_MODE_CHANGED" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_4x2" />
+        </receiver>
+        <provider android:name="com.zing.mp3.data.db.ZibaContentProvider" android:exported="false" android:authorities="com.zing.mp3.provider" />
+        <provider android:name="com.zing.mp3.data.db.sp.SafePreferencesContentProvider" android:exported="false" android:authorities="com.zing.mp3.provider.safepreferences" />
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.zing.mp3.provider.file" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider" />
+        </provider>
+        <provider android:name="com.facebook.FacebookContentProvider" android:exported="true" android:authorities="com.facebook.app.FacebookContentProvider1603079626622346" />
+        <meta-data android:name="configFullScreen" android:value="true" />
+        <meta-data android:name="configOffSuccessDialog" android:value="false" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.zing.zalo.zalosdk.oauth.EventMessageActivity" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.zing.zalo.zalosdk.payment.direct.PaymentGatewayActivity" android:launchMode="singleTop" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.zing.zalo.zalosdk.payment.direct.PaymentChannelActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:name="com.zing.zalo.zalosdk.payment.direct.CameraActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.zing.zalo.zalosdk.payment.direct.ReviewActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" />
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <activity android:theme="@style/Theme.IAPTheme" android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" />
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false" />
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false" />
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.zing.mp3.firebaseinitprovider" android:initOrder="100" />
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.zing.mp3" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false" />
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true" />
+    </application>
+</manifest>

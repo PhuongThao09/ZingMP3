@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_form_margin_bottom_back_button">10.0dip</dimen>
+    <dimen name="login_form_margin_right_title_regis_acc">125.0dip</dimen>
+    <dimen name="login_form_margin_top_back_button">160.0dip</dimen>
+    <dimen name="payment_button_submit_height">48.0dip</dimen>
+    <dimen name="payment_button_submit_text_size">18.0dip</dimen>
+    <dimen name="payment_card_height">50.0dip</dimen>
+    <dimen name="payment_channel_icon_size">40.0dip</dimen>
+    <dimen name="payment_displayInfo_padding">10.0dip</dimen>
+    <dimen name="payment_group_button_submit_height">50.0dip</dimen>
+    <dimen name="payment_header_landscape_width">140.0dip</dimen>
+    <dimen name="payment_icon_channel_margin_right">10.0dip</dimen>
+    <dimen name="payment_info_row1_text_size">18.0dip</dimen>
+    <dimen name="payment_mobile_container_padding">20.0dip</dimen>
+    <dimen name="payment_save_card_label_width">105.0dip</dimen>
+    <dimen name="payment_save_card_text_size">14.0dip</dimen>
+    <dimen name="sdk_form_input_size">16.0dip</dimen>
+    <dimen name="sdk_icon_channel_size">25.0dip</dimen>
+    <dimen name="sdk_login_channel_padding">4.0dip</dimen>
+    <dimen name="sdk_row_channel_padding">15.0dip</dimen>
+    <dimen name="sdk_title_channel_margin_left">33.0dip</dimen>
+    <dimen name="sdk_title_channel_size">14.0dip</dimen>
+</resources>

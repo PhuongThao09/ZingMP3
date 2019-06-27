@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?selector" android:paddingTop="@dimen/spacing_small" android:paddingBottom="@dimen/spacing_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/li_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/index" android:layout_width="@dimen/li_song_thumb" android:layout_height="@dimen/li_song_thumb">
+        <TextView android:textSize="@dimen/text_chart_rank" android:gravity="center" android:layout_gravity="center" android:id="@id/tvIndex" android:layout_width="@dimen/li_song_thumb" android:layout_height="wrap_content" />
+        <com.zing.mp3.ui.widget.WaveBar android:layout_gravity="center" android:id="@id/waveBar" android:layout_width="25.0dip" android:layout_height="25.0dip" app:wb_color="?colorAccent" app:wb_radius="2.0dip" />
+    </FrameLayout>
+    <ImageButton android:id="@id/btnMenu" android:background="?selectorBorderless" android:paddingRight="4.0dip" android:layout_width="@dimen/li_song_menu_width" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/spacing_normal" android:src="@drawable/ic_overflow" android:minHeight="@dimen/li_song_thumb" android:layout_alignTop="@id/imgThumb" android:layout_alignBottom="@id/imgThumb" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/spacing_small" android:paddingBottom="@dimen/spacing_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btnMenu" android:layout_toRightOf="@id/index" android:layout_centerVertical="true">
+        <TextView android:ellipsize="end" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Ziba.Widget.TextView.Primary" />
+        <TextView android:textColor="?tcToolbarSubtitle" android:id="@id/tvArtist" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Ziba.Widget.TextView" />
+    </LinearLayout>
+</RelativeLayout>

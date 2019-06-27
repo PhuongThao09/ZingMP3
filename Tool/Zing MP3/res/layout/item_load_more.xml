@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/loadMore" android:background="?selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/li_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:gravity="center" android:id="@id/tvLoadMoreError" android:background="?selectorBold" android:paddingLeft="@dimen/spacing_normal" android:paddingTop="@dimen/spacing_large" android:paddingRight="@dimen/spacing_normal" android:paddingBottom="@dimen/spacing_large" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:layout_gravity="center" android:id="@id/pbLoadMore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/loading" />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/player" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="200.0dip">
+        <com.zing.mp3.ui.widget.VideoView android:layout_gravity="center" android:id="@id/videoview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/videoController" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/video_controller" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/menuMore" android:background="@color/overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/text_primary" android:textColor="@color/dark_textPrimary" android:id="@id/btnQuality" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:text="@string/menu_quality" android:drawableTop="@drawable/ic_quality_video" android:drawablePadding="@dimen/spacing_normal" />
+            <TextView android:textSize="@dimen/text_primary" android:textColor="@color/dark_textPrimary" android:id="@id/btnReport" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_report" android:drawableTop="@drawable/ic_report" android:drawablePadding="@dimen/spacing_normal" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/quality" android:background="@color/overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/text_primary" android:textColor="@color/dark_textPrimary" android:id="@id/btn240" android:background="@drawable/video_quality_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p240" />
+            <TextView android:textSize="@dimen/text_primary" android:textColor="@color/dark_textPrimary" android:id="@id/btn360" android:background="@drawable/video_quality_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:text="@string/p360" />
+            <TextView android:textSize="@dimen/text_primary" android:textColor="@color/dark_textPrimary" android:id="@id/btn480" android:background="@drawable/video_quality_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:text="@string/p480" />
+            <TextView android:textSize="@dimen/text_primary" android:textColor="@color/dark_textPrimary" android:id="@id/btn720" android:background="@drawable/video_quality_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:text="@string/p720" />
+            <TextView android:textSize="@dimen/text_primary" android:textColor="@color/dark_textPrimary" android:id="@id/btn1080" android:background="@drawable/video_quality_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:text="@string/p1080" />
+        </LinearLayout>
+        <ImageButton android:layout_gravity="center|right|top" android:id="@id/btnClose" android:background="?selectorBorderless" android:padding="@dimen/spacing_large" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_video" android:minWidth="@dimen/li_min_height" android:minHeight="@dimen/li_min_height" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

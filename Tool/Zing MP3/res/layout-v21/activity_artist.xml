@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <android.support.design.widget.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/appBar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="com.zing.mp3.ui.widget.FlingBehavior">
+            <android.support.design.widget.CollapsingToolbarLayout android:id="@id/collapsingToolbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:expandedTitleMarginStart="@dimen/spacing_large" app:expandedTitleMarginEnd="@dimen/spacing_large" app:contentScrim="@color/transparent" app:statusBarScrim="@color/transparent">
+                <com.zing.mp3.ui.widget.HeaderImageView android:id="@id/imgCover" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/overlay_img_header" android:scaleType="centerCrop" android:transitionName="@string/tn_thumb" app:layout_collapseMode="parallax" />
+                <android.support.v7.widget.Toolbar android:theme="@style/Ziba.Theme.Dark" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:title="Collapsing Toolbar" android:popupTheme="@style/ThemeOverlay.AppCompat.Dark" app:layout_collapseMode="pin">
+                    <include android:id="@id/info_header_toolbar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/info_header_toolbar" />
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.widget.NestedScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <FrameLayout android:id="@id/center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large" layout="@layout/item_songs_artist" />
+                    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large" layout="@layout/item_albums_artist" />
+                    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large_minus_card_padding_bottom" layout="@layout/item_videos_artist" />
+                    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large_minus_card_padding_bottom" layout="@layout/item_artist_group" />
+                    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large_minus_card_padding_bottom" layout="@layout/item_comment_stat" />
+                    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_normal" layout="@layout/item_load_more" />
+                </LinearLayout>
+            </FrameLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <include android:layout_gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_behavior="@string/behavior_center" layout="@layout/loading" />
+        <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_behavior="@string/behavior_center" layout="@layout/error" />
+        <include android:id="@id/info_header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/behavior_info" layout="@layout/info_header" />
+    </android.support.design.widget.CoordinatorLayout>
+    <include layout="@layout/playbar" />
+</LinearLayout>

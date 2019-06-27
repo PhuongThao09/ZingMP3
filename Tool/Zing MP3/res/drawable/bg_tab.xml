@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="false">
+        <layer-list>
+            <item android:left="@dimen/tablayout_inset_negative" android:top="@dimen/tablayout_inset_negative" android:right="@dimen/tablayout_inset_negative">
+                <shape android:shape="rectangle">
+                    <stroke android:width="@dimen/divider" android:color="@color/divider" />
+                    <solid android:color="@color/transparent" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_selected="false" android:drawable="@color/transparent" />
+</selector>

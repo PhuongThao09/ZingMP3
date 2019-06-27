@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/homePager" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.view.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <com.zing.mp3.ui.widget.MaterialPagerIndicator android:gravity="center" android:layout_gravity="center|right|top" android:id="@id/mpi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_card" android:layout_marginRight="@dimen/spacing_card" app:mpi_indicatorRadius="3.0dip" app:mpi_indicatorPadding="6.0dip" app:mpi_indicatorColor="#42ffffff" app:mpi_selectedIndicatorColor="#b4ffffff" />
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:theme="@style/Ziba.Theme.Dark"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/imgLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/splash_logo" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:layout_marginRight="@dimen/spacing_normal" android:layout_marginBottom="@dimen/spacing_normal">
+        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:gravity="center" android:id="@id/tvNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="25.0dip" android:lineSpacingExtra="@dimen/spacing_line_extra" />
+        <Button android:theme="@style/Ziba.Theme.Button.ZaloLogin" android:id="@id/btnZaloLogin" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="55.0dip" android:text="@string/login_zalo" android:drawableLeft="@drawable/ic_zalo" android:textAllCaps="true" style="@style/Widget.AppCompat.Button.Colored" />
+        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:layout_gravity="bottom|center" android:id="@id/btnRegister" android:background="?selector" android:padding="@dimen/spacing_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/register_zalo" />
+    </LinearLayout>
+</FrameLayout>

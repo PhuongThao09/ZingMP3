@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/textView" android:paddingLeft="@dimen/spacing_dialog" android:paddingTop="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_dialog" android:paddingBottom="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <CheckBox android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:id="@id/cb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_dialog_checkbox" android:minHeight="@dimen/li_min_height" />
+</LinearLayout>

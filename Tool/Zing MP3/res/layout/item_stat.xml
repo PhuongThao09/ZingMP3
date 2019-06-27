@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btnStat" android:background="?colorBackgroundBold" android:padding="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/li_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_normal" android:src="@drawable/ic_plays" android:tint="?colorDrawableTint" />
+        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:gravity="center" android:layout_gravity="center" android:id="@id/tvPlays" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/spacing_normal" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_normal" android:src="@drawable/ic_fav_song" android:tint="?colorDrawableTint" />
+        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:gravity="center" android:layout_gravity="center" android:id="@id/tvFavs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/spacing_normal" />
+    </LinearLayout>
+</LinearLayout>

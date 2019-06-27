@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zing.mp3.ui.widget.NonInterceptScrollView android:scrollbarStyle="outsideOverlay" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/equalizer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_normal" android:minHeight="@dimen/li_min_height">
+            <android.support.v7.widget.SwitchCompat android:id="@id/switchEqualizer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:id="@id/tvEqualizer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equalizer" style="@style/Ziba.Widget.TextView.Header" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/equalizerItem" android:paddingTop="@dimen/spacing_normal" android:paddingBottom="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/preset" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_normal">
+            <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:layout_gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/preset" />
+            <Spinner android:layout_gravity="center_vertical" android:id="@id/ddlPreset" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:layout_weight="1.0" />
+            <Button android:layout_gravity="center_vertical" android:id="@id/btnSave" android:background="?selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:minWidth="0.0dip" android:text="@string/save" />
+            <Button android:layout_gravity="center_vertical" android:id="@id/btnDelete" android:background="?selector" android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:minWidth="0.0dip" android:text="@string/delete" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/bassBoost" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large" android:minHeight="@dimen/li_min_height">
+            <android.support.v7.widget.SwitchCompat android:id="@id/switchBassBoost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:id="@id/tvBassBoost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bass_boost" style="@style/Ziba.Widget.TextView.Header" />
+        </RelativeLayout>
+        <SeekBar android:id="@id/sbBassBoost" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:layout_marginTop="@dimen/spacing_normal" android:layout_marginRight="@dimen/spacing_normal" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/virtualizer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large" android:minHeight="@dimen/li_min_height">
+            <android.support.v7.widget.SwitchCompat android:id="@id/switchVirtualizer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:id="@id/tvVirtualizer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/virtualizer" style="@style/Ziba.Widget.TextView.Header" />
+        </RelativeLayout>
+        <SeekBar android:id="@id/sbVirtualizer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:layout_marginTop="@dimen/spacing_normal" android:layout_marginRight="@dimen/spacing_normal" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/balance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large" android:minHeight="@dimen/li_min_height">
+            <android.support.v7.widget.SwitchCompat android:id="@id/switchBalance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:id="@id/tvBalance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/balance" style="@style/Ziba.Widget.TextView.Header" />
+        </RelativeLayout>
+        <SeekBar android:id="@id/sbBalance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:layout_marginTop="@dimen/spacing_normal" android:layout_marginRight="@dimen/spacing_normal" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/reverb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large" android:minHeight="@dimen/li_min_height">
+            <android.support.v7.widget.SwitchCompat android:id="@id/switchReverb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:id="@id/tvReverb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reverb" style="@style/Ziba.Widget.TextView.Header" />
+        </RelativeLayout>
+        <Spinner android:id="@id/ddlReverb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:layout_marginTop="@dimen/spacing_normal" android:layout_marginRight="@dimen/spacing_normal" android:layout_marginBottom="@dimen/spacing_normal" />
+    </LinearLayout>
+</com.zing.mp3.ui.widget.NonInterceptScrollView>

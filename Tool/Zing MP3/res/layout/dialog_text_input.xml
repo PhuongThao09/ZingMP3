@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="@dimen/spacing_dialog" android:paddingRight="@dimen/spacing_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textAppearance="@style/Ziba.TextAppearance.Dialog" android:gravity="bottom|center|left" android:layout_gravity="center" android:id="@id/editText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="70.0dip" />
+</FrameLayout>

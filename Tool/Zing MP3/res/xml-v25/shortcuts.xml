@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_shortcut_search" android:enabled="true" android:shortcutId="imFeelingLucky" android:shortcutShortLabel="@string/shortcut_search" android:shortcutLongLabel="@string/shortcut_search" android:shortcutDisabledMessage="@string/shortcut_search">
+        <intent android:targetPackage="com.zing.mp3" android:action="android.intent.action.MAIN" android:targetClass="com.zing.mp3.ui.activity.MainActivity" />
+        <intent android:targetPackage="com.zing.mp3" android:action="android.intent.action.VIEW" android:targetClass="com.zing.mp3.ui.activity.SearchActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_shortcut_feel_lucky" android:enabled="true" android:shortcutId="feelingLucky" android:shortcutShortLabel="@string/shortcut_feeling_lucky_short" android:shortcutLongLabel="@string/shortcut_feeling_lucky" android:shortcutDisabledMessage="@string/shortcut_feeling_lucky">
+        <intent android:targetPackage="com.zing.mp3" android:action="com.zing.mp3.action.SHUFFLE" android:targetClass="com.zing.mp3.ui.activity.MainActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_shortcut_music_library" android:enabled="true" android:shortcutId="musicLibrary" android:shortcutShortLabel="@string/shortcut_music_library" android:shortcutLongLabel="@string/shortcut_music_library" android:shortcutDisabledMessage="@string/shortcut_music_library">
+        <intent android:targetPackage="com.zing.mp3" android:action="android.intent.action.MAIN" android:targetClass="com.zing.mp3.ui.activity.MainActivity" />
+        <intent android:targetPackage="com.zing.mp3" android:action="android.intent.action.VIEW" android:targetClass="com.zing.mp3.ui.activity.LocalMusicActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_shortcut_shuffle" android:enabled="true" android:shortcutId="shuffleLocal" android:shortcutShortLabel="@string/shortcut_shuffle_local_short" android:shortcutLongLabel="@string/shortcut_shuffle_local" android:shortcutDisabledMessage="@string/shortcut_shuffle_local">
+        <intent android:targetPackage="com.zing.mp3" android:action="android.intent.action.MAIN" android:targetClass="com.zing.mp3.ui.activity.MainActivity" />
+        <intent android:targetPackage="com.zing.mp3" android:action="com.zing.mp3.action.SHUFFLE" android:targetClass="com.zing.mp3.ui.activity.LocalMusicActivity" />
+    </shortcut>
+</shortcuts>

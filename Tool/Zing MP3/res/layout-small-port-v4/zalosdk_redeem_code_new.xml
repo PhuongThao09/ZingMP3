@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#aa000000" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/container" android:background="@drawable/zalosdk_round_corner" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/payment_method_container" layout="@layout/payment_method_container" />
+        <ScrollView android:layout_gravity="center_horizontal" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/payment_group_button_submit_height" android:fillViewport="true" android:layout_below="@id/payment_method_container">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:id="@id/view_root" android:padding="7.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+                    <EditText android:textSize="@dimen/sdk_form_input_size" android:id="@id/redeemCode" android:background="@drawable/zalosdk_border06" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/zalosdk_redeem_hint" android:singleLine="true" android:maxLength="20" android:imeOptions="actionGo" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/redeemCode">
+                        <LinearLayout android:id="@id/list_code_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.1">
+                            <ListView android:id="@id/list_code" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:cacheColorHint="#00000000" android:divider="#fff3f3f3" android:dividerHeight="6.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="15.0dip" android:textStyle="italic" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/payment_method_description" android:paddingLeft="@dimen/payment_displayInfo_padding" android:paddingRight="@dimen/payment_displayInfo_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="2" android:singleLine="false" android:maxLength="50" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/payment_group_button_submit_height" android:layout_alignParentBottom="true" layout="@layout/zalosdk_toggle_submit_module" />
+    </RelativeLayout>
+</RelativeLayout>

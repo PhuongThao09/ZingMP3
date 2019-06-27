@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="benefit_item_margin">30.0dip</dimen>
+    <dimen name="benefit_item_padding">25.0dip</dimen>
+    <dimen name="benefit_title_margin">60.0dip</dimen>
+</resources>

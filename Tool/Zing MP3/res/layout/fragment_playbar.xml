@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/playbar_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/playbar_shadow_height" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/playbar" android:background="?selectorPlaybar" android:padding="@dimen/spacing_small" android:layout_width="fill_parent" android:layout_height="@dimen/playbar_height">
+        <com.zing.mp3.ui.widget.DiscView android:layout_gravity="center_vertical" android:id="@id/imgThumb" android:layout_width="@dimen/playbar_thumb" android:layout_height="@dimen/playbar_thumb" android:src="@drawable/default_discview_play_bar" android:scaleType="fitXY" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/info" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/spacing_small" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text" android:textColor="?tcPrimary" android:layout_gravity="center_vertical" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="?tcSecondary" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tvArtist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="@dimen/spacing_small" />
+        </LinearLayout>
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnPrev" android:background="?selectorBorderless" android:layout_width="@dimen/playbar_thumb" android:layout_height="fill_parent" android:src="@drawable/ic_playbar_prev" android:tint="?colorPlaybarDrawableTint" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnPlayPause" android:background="?selectorBorderless" android:layout_width="@dimen/playbar_thumb" android:layout_height="fill_parent" android:src="@drawable/ic_playbar_play" android:tint="?colorPlaybarDrawableTint" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnNext" android:background="?selectorBorderless" android:layout_width="@dimen/playbar_thumb" android:layout_height="fill_parent" android:src="@drawable/ic_playbar_next" android:tint="?colorPlaybarDrawableTint" />
+    </LinearLayout>
+</LinearLayout>

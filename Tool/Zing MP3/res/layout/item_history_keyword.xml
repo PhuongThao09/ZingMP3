@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/li_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:src="@drawable/ic_search_history" android:tint="?colorDrawableTint" />
+    <TextView android:id="@id/tvKeyword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:layout_weight="1.0" style="@style/Ziba.Widget.TextView.Primary" />
+    <ImageView android:id="@id/imgEditSuggestion" android:background="?selectorBorderless" android:visibility="gone" android:layout_width="@dimen/li_song_menu_width" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/spacing_normal" android:layout_marginRight="@dimen/spacing_normal" android:src="@drawable/ic_keyword_up" android:scaleType="centerInside" android:tint="?colorDrawableTint" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:paddingLeft="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:id="@id/album" android:paddingTop="@dimen/spacing_normal" android:paddingBottom="@dimen/spacing_normal">
+        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/album" />
+        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:textColor="?colorAccent" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvAlbum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_large" android:maxLines="1" android:layout_weight="1.0" />
+    </TableRow>
+    <TableRow android:id="@id/artist" android:paddingTop="@dimen/spacing_normal" android:paddingBottom="@dimen/spacing_normal">
+        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/artist" />
+        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:textColor="?colorAccent" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvArtist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_large" android:maxLines="1" android:layout_weight="1.0" />
+    </TableRow>
+    <TableRow android:id="@id/cate" android:paddingTop="@dimen/spacing_normal" android:paddingBottom="@dimen/spacing_normal">
+        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/category" />
+        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:textColor="?colorAccent" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvCate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_large" android:maxLines="1" android:layout_weight="1.0" />
+    </TableRow>
+    <TableRow android:id="@id/release" android:paddingTop="@dimen/spacing_normal" android:paddingBottom="@dimen/spacing_normal">
+        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/release" />
+        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvRelease" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_large" android:maxLines="1" android:layout_weight="1.0" />
+    </TableRow>
+    <TableRow android:id="@id/license" android:paddingTop="@dimen/spacing_normal" android:paddingBottom="@dimen/spacing_normal">
+        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/license" />
+        <TextView android:textAppearance="@style/Ziba.TextAppearance.Primary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvLicense" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_large" android:maxLines="1" android:layout_weight="1.0" />
+    </TableRow>
+</TableLayout>

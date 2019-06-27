@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.GridLayout android:id="@id/left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_normal" android:layout_weight="1.0" app:rowCount="4" app:columnCount="2">
+        <com.zing.mp3.ui.widget.SquareImageView android:background="#ffff0000" android:scaleType="fitXY" app:layout_rowSpan="2" app:layout_rowWeight="1.0" app:layout_columnSpan="2" app:layout_columnWeight="1.0" />
+        <com.zing.mp3.ui.widget.SquareImageView android:background="#ff00ff00" android:layout_marginTop="@dimen/spacing_card" android:layout_marginRight="@dimen/spacing_card" android:scaleType="fitXY" app:layout_rowSpan="1" app:layout_rowWeight="1.0" app:layout_columnSpan="1" app:layout_columnWeight="1.0" />
+        <com.zing.mp3.ui.widget.SquareImageView android:background="#ff0000ff" android:layout_marginTop="@dimen/spacing_card" android:scaleType="fitXY" app:layout_rowSpan="1" app:layout_rowWeight="1.0" app:layout_columnSpan="1" app:layout_columnWeight="1.0" />
+        <com.zing.mp3.ui.widget.SquareImageView android:background="#ffaaaaaa" android:layout_marginTop="@dimen/spacing_card" android:layout_marginRight="@dimen/spacing_card" android:scaleType="fitXY" app:layout_rowSpan="1" app:layout_rowWeight="1.0" app:layout_columnSpan="1" app:layout_columnWeight="1.0" />
+        <com.zing.mp3.ui.widget.SquareImageView android:background="#ff0f0f0f" android:layout_marginTop="@dimen/spacing_card" android:scaleType="fitXY" app:layout_rowSpan="1" app:layout_rowWeight="1.0" app:layout_columnSpan="1" app:layout_columnWeight="1.0" />
+    </android.support.v7.widget.GridLayout>
+    <android.support.v7.widget.GridLayout android:id="@id/right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:rowCount="4" app:columnCount="2">
+        <com.zing.mp3.ui.widget.SquareImageView android:background="#ff00ff00" android:layout_marginRight="@dimen/spacing_card" android:scaleType="fitXY" app:layout_rowSpan="1" app:layout_rowWeight="1.0" app:layout_columnSpan="1" app:layout_columnWeight="1.0" />
+        <com.zing.mp3.ui.widget.SquareImageView android:background="#ff0000ff" android:scaleType="fitXY" app:layout_rowSpan="1" app:layout_rowWeight="1.0" app:layout_columnSpan="1" app:layout_columnWeight="1.0" />
+        <com.zing.mp3.ui.widget.SquareImageView android:background="#ffff0000" android:layout_marginTop="@dimen/spacing_card" android:scaleType="fitXY" app:layout_rowSpan="2" app:layout_rowWeight="2.0" app:layout_columnSpan="2" app:layout_columnWeight="2.0" />
+        <com.zing.mp3.ui.widget.SquareImageView android:background="#ffaaaaaa" android:layout_marginTop="@dimen/spacing_card" android:layout_marginRight="@dimen/spacing_card" android:scaleType="fitXY" app:layout_rowSpan="1" app:layout_rowWeight="1.0" app:layout_columnSpan="1" app:layout_columnWeight="1.0" />
+        <com.zing.mp3.ui.widget.SquareImageView android:background="#ff0f0f0f" android:layout_marginTop="@dimen/spacing_card" android:scaleType="fitXY" app:layout_rowSpan="1" app:layout_rowWeight="1.0" app:layout_columnSpan="1" app:layout_columnWeight="1.0" />
+    </android.support.v7.widget.GridLayout>
+</LinearLayout>

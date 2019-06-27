@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?selector" android:paddingTop="@dimen/spacing_small" android:paddingBottom="@dimen/spacing_small" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/rank" android:layout_width="@dimen/li_song_thumb" android:layout_height="wrap_content" layout="@layout/rank" />
+    <ImageView android:id="@id/imgThumb" android:layout_width="@dimen/li_song_thumb" android:layout_height="@dimen/li_song_thumb" android:layout_marginRight="@dimen/spacing_normal" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/tvArtist" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Ziba.Widget.TextView.Primary" />
+        <TextView android:id="@id/tvFollows" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Ziba.Widget.TextView" />
+    </LinearLayout>
+    <ImageView android:id="@id/btnFollow" android:padding="@dimen/spacing_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:scaleType="center" />
+</LinearLayout>

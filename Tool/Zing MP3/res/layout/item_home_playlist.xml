@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zing.mp3.ui.widget.FgRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selector"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgBg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <FrameLayout android:id="@id/container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/imgThumb" android:layout_width="@dimen/li_song_thumb" android:layout_height="@dimen/li_song_thumb" android:layout_marginLeft="@dimen/spacing_card" android:layout_marginBottom="@dimen/spacing_normal" android:scaleType="fitXY" />
+    </FrameLayout>
+    <ImageButton android:id="@id/btnPlay" android:background="?selector" android:padding="@dimen/spacing_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fast_play" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="left" android:id="@id/tvTitle" android:paddingBottom="@dimen/spacing_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_card" android:layout_marginRight="@dimen/spacing_card" android:includeFontPadding="false" android:layout_toLeftOf="@id/btnPlay" android:layout_toRightOf="@id/container" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" style="@style/Ziba.Widget.TextView.Primary" />
+</com.zing.mp3.ui.widget.FgRelativeLayout>

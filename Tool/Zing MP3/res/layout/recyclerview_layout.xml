@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/recyclerview" />
+    <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/loading" />
+    <ViewStub android:layout_gravity="center" android:id="@id/vsError" android:layout="@layout/error" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

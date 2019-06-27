@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout" android:background="@drawable/bg_app_widget" android:padding="@dimen/spacing_normal" android:paddingTop="25.0dip" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/textAppWidgetTitle" android:gravity="center_vertical" android:id="@id/tvTitle" android:focusable="true" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_no_songs" android:maxLines="3" android:drawableLeft="@mipmap/ic_launcher" android:drawablePadding="15.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</FrameLayout>

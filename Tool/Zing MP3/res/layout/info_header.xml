@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zing.mp3.ui.widget.InfoHeaderLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/info" android:paddingLeft="@dimen/spacing_normal" android:paddingTop="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:theme="@style/Theme.AppCompat"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imgThumb" android:visibility="visible" android:layout_width="@dimen/thumb_album" android:layout_height="@dimen/thumb_album" android:layout_marginBottom="@dimen/spacing_normal" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:layout_marginBottom="@dimen/spacing_normal" android:layout_weight="1.0">
+        <TextView android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Ziba.Widget.TextView.CollapsingToolbar.Title" />
+        <TextView android:id="@id/tvSubTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Ziba.Widget.TextView.CollapsingToolbar.Subtitle" />
+    </LinearLayout>
+    <ImageButton android:id="@id/btn" android:background="@null" android:padding="@dimen/spacing_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:scaleType="center" />
+</com.zing.mp3.ui.widget.InfoHeaderLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffd3d7e4" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/payment_method_container" android:background="#ffe0e4e9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="37.0dip">
+        <ImageView android:id="@id/channel_back" android:layout_width="34.0dip" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/back_portrait" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_centerInParent="true">
+            <TextView android:textSize="20.0dip" android:textColor="#ff292f33" android:gravity="center_horizontal" android:id="@id/payment_method_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0px" />
+            <TextView android:textSize="20.0dip" android:textColor="#ffed750a" android:gravity="center_horizontal" android:id="@id/payment_method_amount" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#ffd3d7e4" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/thumb_video_height" android:width="@dimen/thumb_video" />
+            <solid android:color="@color/defaultThumbBg" />
+            <corners android:radius="@dimen/image_rounded_radius" />
+        </shape>
+    </item>
+</layer-list>

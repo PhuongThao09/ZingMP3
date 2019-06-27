@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:height="@dimen/playbar_thumb" android:width="@dimen/playbar_thumb" />
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="@dimen/disc_border_size_playbar" android:color="@color/discViewBorder" />
+        </shape>
+    </item>
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/ic_default_song" />
+    </item>
+</layer-list>

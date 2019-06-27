@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?selector"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="?colorAccent" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/text" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:layout_marginRight="@dimen/spacing_normal" android:maxLines="3" android:singleLine="false" android:lineSpacingExtra="2.0dip" android:textAllCaps="true" style="@style/Ziba.Widget.TextView.Primary" />
+</FrameLayout>

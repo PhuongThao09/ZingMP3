@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.zing.mp3.ui.widget.TransparentDividerNumberPicker android:id="@id/npWeek" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <View android:background="?dividerColor" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <com.zing.mp3.ui.widget.TransparentDividerNumberPicker android:id="@id/npYear" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="?dividerColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <Button android:id="@id/btnOk" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_button_size" android:text="@string/ok" style="@style/Ziba.DialogStyle.Button" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?selector" android:paddingLeft="@dimen/spacing_normal" android:paddingTop="@dimen/spacing_small" android:paddingBottom="@dimen/spacing_small" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0sp" android:textColor="?tcSecondary" android:gravity="center" android:id="@id/tvThumb" android:layout_width="@dimen/li_song_thumb" android:layout_height="@dimen/li_song_thumb" android:layout_marginRight="@dimen/spacing_normal" android:layout_centerVertical="true" />
+    <ImageButton android:id="@id/btnMenu" android:background="?selectorBorderless" android:layout_width="@dimen/li_song_menu_width" android:layout_height="fill_parent" android:src="@drawable/ic_more" android:tint="?colorDrawableTint" android:minHeight="@dimen/li_song_thumb" android:layout_alignTop="@id/imgThumb" android:layout_alignBottom="@id/tvThumb" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_normal" android:layout_toLeftOf="@id/btnMenu" android:layout_toRightOf="@id/tvThumb" android:layout_centerVertical="true">
+        <TextView android:ellipsize="end" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Ziba.Widget.TextView.Primary" />
+        <TextView android:id="@id/tvSongs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/spacing_small" android:layout_below="@id/tvName" style="@style/Ziba.Widget.TextView" />
+        <TextView android:ellipsize="start" android:id="@id/tvPath" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/tvSongs" android:layout_below="@id/tvName" android:layout_alignBottom="@id/tvSongs" style="@style/Ziba.Widget.TextView" />
+    </RelativeLayout>
+</RelativeLayout>

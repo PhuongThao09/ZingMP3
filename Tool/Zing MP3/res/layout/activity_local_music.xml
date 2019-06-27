@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <android.support.design.widget.AppBarLayout android:id="@id/appBar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:popupTheme="@style/Theme.AppCompat.Light.NoActionBar" app:layout_scrollFlags="enterAlways|scroll|snap" />
+            <com.zing.mp3.ui.widget.FillableScrollableTabLayout android:id="@id/tabs" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabIndicatorColor="?colorAccent" app:tabMode="scrollable" app:tabGravity="fill" />
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.view.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <android.support.design.widget.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/btnCreate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:src="@drawable/ic_create" app:layout_behavior="@string/behavior_float_button_scroll" />
+    </android.support.design.widget.CoordinatorLayout>
+    <include layout="@layout/playbar" />
+</LinearLayout>

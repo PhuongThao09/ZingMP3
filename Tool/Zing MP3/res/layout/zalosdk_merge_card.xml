@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#aa000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.zing.zalo.zalosdk.payment.direct.DynamicLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/container" android:background="@drawable/zalosdk_background_grey_stroke_grey_corner_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="25.0dip" android:layout_centerInParent="true">
+            <include android:id="@id/zalosdk_header_payment_info" layout="@layout/zalosdk_header_payment_info" />
+            <EditText android:textSize="13.0sp" android:textStyle="italic" android:id="@id/zalosdk_card_code_ctl" android:background="@drawable/zalosdk_border06" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:hint="@string/zalosdk_cardcode" android:singleLine="true" android:maxLength="20" android:inputType="number" android:imeOptions="actionNext" />
+            <EditText android:textSize="13.0sp" android:textStyle="italic" android:id="@id/zalosdk_card_seri_ctl" android:background="@drawable/zalosdk_border06" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:hint="@string/zalosdk_cardseri" android:singleLine="true" android:maxLength="20" android:inputType="textCapCharacters" android:imeOptions="actionGo" />
+            <ScrollView android:layout_gravity="center_horizontal" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/zalosdk_header_payment_info">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/payment_method_container" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/view_root" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/mobile_card_adapter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:baselineAligned="false">
+                            <RelativeLayout android:id="@id/viettel_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <ImageView android:id="@id/viettel_ctl" android:background="@drawable/zalosdk_border12" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:src="@drawable/viettel" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+                                <ImageView android:id="@id/viettel_check" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_centerHorizontal="true" />
+                            </RelativeLayout>
+                            <RelativeLayout android:id="@id/mobi_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                                <ImageView android:id="@id/mobi_ctl" android:background="@drawable/zalosdk_border12" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:src="@drawable/mobiphone" android:layout_centerHorizontal="true" />
+                                <ImageView android:id="@id/mobi_check" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_centerHorizontal="true" />
+                            </RelativeLayout>
+                            <RelativeLayout android:id="@id/vina_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <ImageView android:id="@id/vina_ctl" android:background="@drawable/zalosdk_border12" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:src="@drawable/vinaphone" android:layout_centerHorizontal="true" />
+                                <ImageView android:id="@id/vina_check" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_centerHorizontal="true" />
+                            </RelativeLayout>
+                            <RelativeLayout android:id="@id/zing_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                                <ImageView android:id="@id/zing_ctl" android:background="@drawable/zalosdk_border12" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:src="@drawable/zing" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+                                <ImageView android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_centerHorizontal="true" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip">
+                            <View android:background="#ffd3d7e4" android:layout_width="0.0dip" android:layout_height="1.0px" android:layout_weight="1.0" />
+                            <TextView android:textColor="#ff23a5c9" android:gravity="center" android:id="@id/holder_name_card" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="chưa chọn loại thẻ" />
+                            <View android:background="#ffd3d7e4" android:layout_width="0.0dip" android:layout_height="1.0px" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <ToggleButton android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/zalosdk_ok_ctl" android:background="@drawable/zalosdk_togglebutton_background" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="15.0dip" android:textOn="@string/zalosdk_submit" android:textOff="@string/zalosdk_submit" />
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageButton android:id="@id/take_photo" android:background="@drawable/camera_beta_disable" android:padding="10.0dip" android:layout_width="72.0dip" android:layout_height="48.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/i_capture" android:scaleType="fitCenter" />
+                            <Button android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/zalosdk_ok_ctl_photo" android:background="@drawable/zalosdk_border15" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="15.0dip" android:text="@string/zalosdk_submit" android:layout_toRightOf="@id/take_photo" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+        <ImageView android:id="@id/zalosdk_exit_ctl" android:paddingBottom="10.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/i_close" android:layout_alignParentRight="true" />
+    </com.zing.zalo.zalosdk.payment.direct.DynamicLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/cmnd_input_container" android:background="@drawable/zalosdk_white_border_rectangle_corner_partial_transparent" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <ImageView android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="8.0dip" android:src="@drawable/ic_id" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+        <EditText android:textSize="14.0dip" android:textColor="#ffbdbdbd" android:id="@id/cmnd_number" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:hint="Nhập số CMND" android:singleLine="true" android:maxLength="15" android:layout_centerVertical="true" android:inputType="number" android:imeOptions="actionNext|flagNoExtractUi" android:textCursorDrawable="@null" />
+    </RelativeLayout>
+    <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/submit_cmnd_number" android:background="@drawable/zalosdk_zing" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="Đồng ý" android:layout_below="@id/cmnd_input_container" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/back_form_cmnd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_form_margin_top_back_button" android:layout_marginBottom="@dimen/login_form_margin_bottom_back_button" android:layout_centerHorizontal="true">
+        <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:id="@id/tt_back_form_cmnd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="Quay về trước" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/ic_arrow" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

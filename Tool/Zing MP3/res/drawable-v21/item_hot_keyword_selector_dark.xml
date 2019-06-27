@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/dark_ripple"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/hot_keyword_bg_dark" />
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/transparent" />
+            <stroke android:width="1.0dip" android:color="@color/dark_hotKeywordBorder" />
+            <corners android:radius="@dimen/tag_hot_keyword_corner" />
+        </shape>
+    </item>
+</ripple>

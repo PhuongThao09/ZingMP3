@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/menuCopy" android:orderInCategory="0" android:title="@string/menu_copy_lyrics" app:showAsAction="never" />
+    <item android:id="@id/menuShare" android:orderInCategory="1" android:title="@string/bs_share" app:showAsAction="never" />
+    <item android:id="@id/menuSwitchDisplayMode" android:orderInCategory="3" android:title="@string/floating_lyrics_display_mode_simple" app:showAsAction="never" />
+    <item android:id="@id/menuOpenApp" android:orderInCategory="4" android:title="@string/floating_lyrics_show_in_app" app:showAsAction="never" />
+    <item android:id="@id/menuClose" android:orderInCategory="5" android:title="@string/menu_close" app:showAsAction="never" />
+</menu>

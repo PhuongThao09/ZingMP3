@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@android:id/list" android:visibility="invisible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/transparent" />
+    <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/loading" />
+    <ViewStub android:layout_gravity="center" android:id="@id/vsError" android:layout="@layout/error" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

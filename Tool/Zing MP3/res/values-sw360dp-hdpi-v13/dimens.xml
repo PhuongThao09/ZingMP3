@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sync_btn_forgot_margin_bottom">20.0dip</dimen>
+    <dimen name="sync_btn_height">45.0dip</dimen>
+    <dimen name="sync_desc_margin_lr">15.0dip</dimen>
+    <dimen name="sync_input_margin_top">25.0dip</dimen>
+    <dimen name="sync_input_spacing">18.0dip</dimen>
+    <dimen name="sync_margin_bottom">45.0dip</dimen>
+    <dimen name="sync_margin_top">25.0dip</dimen>
+</resources>

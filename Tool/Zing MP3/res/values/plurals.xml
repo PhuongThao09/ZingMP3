@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cannot_delete_song">
+        <item quantity="other">Không thể xóa %d bài hát</item>
+    </plurals>
+    <plurals name="delete_song">
+        <item quantity="other">Đã xóa %d bài hát</item>
+    </plurals>
+    <plurals name="dialog_restore_sync">
+        <item quantity="other">“Có %s bài hát được tải về thiết bị trước đó, bạn có muốn thêm vào danh sách Khôi phục?</item>
+    </plurals>
+    <plurals name="follower">
+        <item quantity="other">%s quan tâm</item>
+    </plurals>
+    <plurals name="result">
+        <item quantity="other">%s kết quả</item>
+    </plurals>
+    <plurals name="song">
+        <item quantity="other">%s bài hát</item>
+    </plurals>
+    <plurals name="timespan_day_ago">
+        <item quantity="other">%d ngày trước</item>
+    </plurals>
+    <plurals name="timespan_hour_ago">
+        <item quantity="other">%d giờ trước</item>
+    </plurals>
+    <plurals name="timespan_min_ago">
+        <item quantity="other">%d phút trước</item>
+    </plurals>
+    <plurals name="timespan_month_ago">
+        <item quantity="other">%d tháng trước</item>
+    </plurals>
+    <plurals name="timespan_sec_ago">
+        <item quantity="other">%d giây trước</item>
+    </plurals>
+    <plurals name="timespan_week_ago">
+        <item quantity="other">%d tuần trước</item>
+    </plurals>
+    <plurals name="timespan_year_ago">
+        <item quantity="other">%d năm trước</item>
+    </plurals>
+</resources>

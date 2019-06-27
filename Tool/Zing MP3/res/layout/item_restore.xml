@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?selector" android:paddingTop="@dimen/spacing_small" android:paddingBottom="@dimen/spacing_small" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/checkBox" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/imgThumb" android:layout_width="@dimen/li_song_thumb" android:layout_height="@dimen/li_song_thumb" android:layout_marginLeft="@dimen/spacing_normal" android:layout_marginRight="@dimen/spacing_normal" android:layout_toRightOf="@id/checkBox" />
+    <ImageButton android:id="@id/btnMenu" android:background="?selectorBorderless" android:layout_width="@dimen/li_song_menu_width" android:layout_height="fill_parent" android:src="@drawable/ic_more" android:tint="?colorDrawableTint" android:minHeight="@dimen/li_song_thumb" android:layout_alignTop="@id/imgThumb" android:layout_alignBottom="@id/imgThumb" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageButton android:id="@id/btnDownload" android:background="?selectorBorderless" android:layout_width="@dimen/li_song_menu_width" android:layout_height="fill_parent" android:src="@drawable/ic_download" android:tint="?colorDrawableTint" android:minHeight="@dimen/li_song_thumb" android:layout_toLeftOf="@id/btnMenu" android:layout_alignTop="@id/imgThumb" android:layout_alignBottom="@id/imgThumb" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btnDownload" android:layout_toRightOf="@id/imgThumb" android:layout_centerVertical="true">
+        <TextView android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Ziba.Widget.TextView.Primary" />
+        <TextView android:id="@id/tvArtist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/spacing_small" style="@style/Ziba.Widget.TextView" />
+    </LinearLayout>
+</RelativeLayout>

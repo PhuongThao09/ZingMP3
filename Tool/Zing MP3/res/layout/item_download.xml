@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:paddingTop="@dimen/spacing_small" android:paddingBottom="@dimen/spacing_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/li_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/rl" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/btnCancel" android:background="?selectorBorderless" android:paddingLeft="@dimen/spacing_normal" android:paddingTop="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:paddingBottom="@dimen/spacing_normal" android:layout_width="@dimen/li_song_menu_width" android:layout_height="fill_parent" android:src="@drawable/ic_download_cancel" android:scaleType="centerInside" android:tint="?colorDrawableTint" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/btnPauseResume" android:background="?selectorBorderless" android:paddingLeft="@dimen/spacing_normal" android:paddingTop="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:paddingBottom="@dimen/spacing_normal" android:layout_width="@dimen/li_song_menu_width" android:layout_height="fill_parent" android:src="@drawable/ic_download_pause" android:scaleType="centerInside" android:layout_toLeftOf="@id/btnCancel" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:layout_toLeftOf="@id/btnPauseResume" android:layout_alignParentLeft="true">
+            <TextView android:textSize="@dimen/text_primary" android:textColor="?tcPrimary" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text" android:textColor="?tcSecondary" android:id="@id/tvStatus" android:paddingBottom="@dimen/spacing_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <SeekBar android:id="@id/seekBar" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:layout_marginRight="@dimen/spacing_normal" android:max="100" android:indeterminate="false" android:thumb="@null" android:layout_below="@id/rl" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/hamburger" android:top="3.0dip" android:right="4.0dip">
+        <bitmap android:gravity="center" android:src="@drawable/ic_hamburger" />
+    </item>
+    <item android:left="12.0dip" android:bottom="11.0dip">
+        <shape android:shape="oval">
+            <solid android:color="@color/dotActive" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zing.mp3.ui.widget.SafeImageView android:id="@id/imgBg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:background="#b82d192d" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/toolbar_overlay" />
+    <LinearLayout android:gravity="center" android:id="@id/buttons" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentBottom="true">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnShuffle" android:background="?selectorBorderless" android:padding="5.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="@dimen/spacing_normal" android:src="@drawable/ic_player_shuffle" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnPrev" android:background="?selectorBorderless" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_player_prev" android:tint="?colorDrawableTint" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnPlay" android:background="?selectorBorderless" android:clickable="true" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="@dimen/spacing_normal" android:layout_marginRight="@dimen/spacing_normal" android:src="@drawable/ic_player_play" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnNext" android:background="?selectorBorderless" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_player_next" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnRepeat" android:background="?selectorBorderless" android:padding="5.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="@dimen/spacing_normal" android:src="@drawable/ic_player_repeat" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/seek" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/buttons">
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/dark_textPrimary" android:id="@id/tvCurent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:text="00:00" />
+        <SeekBar android:id="@id/seekBar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="-5.0dip" android:layout_marginRight="-5.0dip" android:max="100" android:thumbOffset="12.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/dark_textPrimary" android:id="@id/tvTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_normal" android:text="00:00" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/seek" android:layout_below="@id/toolbar">
+        <com.zing.mp3.ui.widget.MaterialPagerIndicator android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:mpi_indicatorRadius="2.5dip" app:mpi_indicatorPadding="5.0dip" app:mpi_indicatorColor="#80ffffff" app:mpi_selectedIndicatorColor="?colorAccent" />
+        <android.support.v4.view.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/spacing_normal" android:layout_below="@id/indicator" />
+    </RelativeLayout>
+</RelativeLayout>

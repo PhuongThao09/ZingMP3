@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/li_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:id="@id/more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Ziba.Widget.TextView.Header.More" />
+    <TextView android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/more" android:layout_centerVertical="true" style="@style/Ziba.Widget.TextView.Header" />
+</RelativeLayout>

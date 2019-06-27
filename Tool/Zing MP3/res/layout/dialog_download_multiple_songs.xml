@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/spacing_dialog_margin_title" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/recyclerview" />
+    <LinearLayout android:id="@id/redownload" android:background="?colorBackgroundBold" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:id="@id/chkRedownload" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_dialog_checkbox" android:text="@string/dialog_redownload_check" />
+    </LinearLayout>
+    <TextView android:textAppearance="@style/Ziba.TextAppearance" android:id="@id/tvCopyright" android:background="?colorBackgroundBold" android:paddingLeft="@dimen/spacing_dialog" android:paddingTop="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_dialog" android:paddingBottom="@dimen/spacing_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>
